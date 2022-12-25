@@ -1,0 +1,33 @@
+#! /bin/bash
+cpuBt=(24 3 4)
+echo "The Array is-------"
+echo ${cpuBt[*]}
+
+#Finding the gaint chart
+temp=0
+j=0
+
+for i in ${cpuBt[@]}
+do
+
+temp=$((temp+i))
+gaintc[$j]=$temp
+j=$((j+1))
+
+done
+
+echo "The Gaint Chart is-------"
+echo ${gaintc[*]}
+
+#Finding the waiting Time
+sum=0
+
+for i in ${gaintc[@]}
+do
+sum=$((sum+j))
+done
+
+$
+
+echo "The Waiting Time is--------------"
+echo $WT|bc

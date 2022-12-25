@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <unistd.h>
+#include <sys/types.h>
+
+int main()
+{
+int f1,f2;
+
+f1 = fork();
+printf("Root :: %d\no
+",getpid());
+
+if(f1>0)
+{
+f2 = fork();
+}
+
+
+
+return 0;
+}
